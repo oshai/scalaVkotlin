@@ -20,6 +20,8 @@ inline fun <T, R> T?.flatMap(transform: (T) -> R?) : R? =
 inline fun <T> T?.filter(predicate: (T) -> Boolean) : T? =
         if (this != null && predicate(this)) this else null
 
+//implement more methods from here: https://www.tutorialspoint.com/scala/scala_options.htm
+
 class Tests {
 
     val nullableNullValue: String? = null
